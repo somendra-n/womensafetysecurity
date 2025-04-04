@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:padding="16dp"
+    android:background="#FFFFFF"> <!-- Optional background color -->
+
+    <!-- App Logo Image -->
+    <ImageView
+        android:id="@+id/appLogo"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:src="@drawable/logo"/>  <!-- Replace with your logo resource -->
+     <!-- Space between the logo and text -->
+
+    <!-- Welcome Message -->
+    <TextView
+        android:id="@+id/tvWelcomeMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome! Shake your phone to send an emergency alert."
+        android:textSize="18sp"
+        android:textColor="#000000"
+        android:gravity="center"
+        android:layout_marginBottom="16dp" /> <!-- Space between messages -->
+
+    <!-- Emergency Status Message -->
+    <TextView
+        android:id="@+id/tvEmergencyStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="You're in Emergency Mode!"
+        android:textSize="24sp"
+
+        android:gravity="center"
+        android:visibility="gone" /> <!-- Initially hidden -->
+    <TextView
+        android:id="@+id/tvShakeStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Shake the phone 3 more times to send the alert."
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:gravity="center">
+
+    <!-- Safe Mode Text -->
+    <!-- Adds space between text and input fields -->
+
+    <!-- Emergency Contact 1 -->
+    <TextView
+        android:id="@+id/tvSafeMode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="24dp"
+        android:text="Please confirm you're safe by entering your emergency contact numbers."
+        android:textColor="#000000"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/etEmergencyContact1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="First Emergency Contact Number"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:layout_marginBottom="16dp"
+        android:background="@drawable/rounded_edittext" /> <!-- Optional rounded corners -->
+
+    <!-- Emergency Contact 2 -->
+    <EditText
+        android:id="@+id/etEmergencyContact2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Second Emergency Contact Number"
+        android:inputType="phone"
+        android:padding="16dp"
+        android:layout_marginBottom="24dp"
+        android:background="@drawable/rounded_edittext" /> <!-- Optional rounded corners -->
+
+    <!-- Confirm Safety Button -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:onClick="confirmSafety"
+        android:text="Confirm Safety"
+        android:textColor="#ffffff"
+        android:textSize="16sp"
+        android:background="@color/colorPrimary"
+        android:padding="16dp"
+        android:layout_marginTop="8dp" /> <!-- Add top margin to button for spacing -->
+</LinearLayout>
